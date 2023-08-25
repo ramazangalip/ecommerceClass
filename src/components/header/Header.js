@@ -119,12 +119,12 @@ const Header = () => {
 
             <li>
               <NavLink to="/" className={activeLink}>
-                Home
+                Anasayfa
               </NavLink>
             </li>
             <li>
               <NavLink to="/contact" className={activeLink}>
-                Contact Us
+                İletişim
               </NavLink>
             </li>
           </ul>
@@ -132,7 +132,7 @@ const Header = () => {
             <span className={styles.links}>
               <ShowOnLogout>
                 <NavLink to="/login" className={activeLink}>
-                  Login
+                  Giriş
                 </NavLink>
               </ShowOnLogout>
               <ShowOnLogin>
@@ -141,10 +141,10 @@ const Header = () => {
                   &nbsp;Merhaba,&nbsp;{displayName}
                 </a>
                 <NavLink to="/order-history" className={activeLink}>
-                  My Orders
+                  Siparişlerim
                 </NavLink>
                 <NavLink to="/" onClick={logoutUser}>
-                  Logout
+                 Çıkış
                 </NavLink>
               </ShowOnLogin>
             </span>

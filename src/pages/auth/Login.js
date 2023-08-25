@@ -4,13 +4,14 @@ import React, { useState } from "react";
 import styles from "./auth.module.scss";
 import loginImg from "../../assets/login.png";
 import { Link, useNavigate } from "react-router-dom";
-import { FaGoogle } from "react-icons/fa";
+import { FaGoogle  } from "react-icons/fa";
 import Card from "../../components/card/Card";
 import { auth } from "../../firebase/config";
 import {
   GoogleAuthProvider,
   signInWithEmailAndPassword,
   signInWithPopup,
+
 } from "firebase/auth";
 import { toast } from "react-toastify";
 import Loader from "../../components/loader/Loader";
@@ -50,6 +51,8 @@ const Login = () => {
         toast.error(error.message)
       });
   };
+ 
+
 
   return (
     <>
@@ -84,6 +87,9 @@ const Login = () => {
           <button className="--btn --btn-danger --btn-block" onClick={signInWithGoogle}>
             <FaGoogle color="#fff" /> &nbsp;Login With Google
           </button>
+          
+          
+          
           <span className={styles.register}>
             <p>Don't have an account ? </p>
             &nbsp;
