@@ -10,6 +10,7 @@ import Reset from './pages/auth/Reset'
 import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Admin from './pages/admin/Admin'
+import ProductDetails from './components/product/productDetails/ProductDetails'
 
 const App = () => {
   return (
@@ -24,6 +25,7 @@ const App = () => {
         <Route path='/register' element={<Register/>}/>
         <Route path='/reset' element={<Reset/>}/>
         <Route path='/admin/*' element={<Admin/>}/>
+        <Route path='/product-details/:id' element={<ProductDetails/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>
