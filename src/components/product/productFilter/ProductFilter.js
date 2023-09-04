@@ -16,12 +16,12 @@ const ProductFilter = () => {
   const dispatch = useDispatch();
 
   const allCategories = [
-    "All",
+    "Hepsi",
     ...new Set(products.map((product)=>product.category))
   ]
 
   const allBrands = [
-    "All",
+    "Hepsi",
     ...new Set(products.map((products)=>products.brand))
   ]
 

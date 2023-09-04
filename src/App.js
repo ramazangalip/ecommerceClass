@@ -11,6 +11,7 @@ import { ToastContainer } from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import Admin from './pages/admin/Admin'
 import ProductDetails from './components/product/productDetails/ProductDetails'
+import Cart from './pages/cart/Cart'
 
 const App = () => {
   return (
@@ -26,6 +27,7 @@ const App = () => {
         <Route path='/reset' element={<Reset/>}/>
         <Route path='/admin/*' element={<Admin/>}/>
         <Route path='/product-details/:id' element={<ProductDetails/>}/>
+        <Route path='/cart' element={<Cart/>}/>
       </Routes>
       <Footer/>
       </BrowserRouter>
