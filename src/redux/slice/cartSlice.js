@@ -9,6 +9,7 @@ const initialState = {
   previousURL: ""
 }
 
+
 const cartSlice = createSlice({
   name: "cart",
   initialState,
